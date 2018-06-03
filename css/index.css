@@ -1,0 +1,326 @@
+/*
+* @Author: 贝贝
+* @Date:   2018-05-26 08:33:46
+* @Last Modified by:   贝贝
+* @Last Modified time: 2018-05-26 17:34:09
+*/
+@import url('base.css');
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+header{
+	width: 100%;
+	height: 44px;
+	background: #444;
+}
+header main{
+	height: 100%;
+	margin: 0 auto;
+	font-size: 10px;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+/* 头部结束 */
+nav{
+	width: 100%;
+	height: 44px;
+	background: #333;
+}
+nav ul{
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav ul li a{
+	font-size: 12px;
+	color: #fff;
+}
+/* 商品列表开始 */
+.list,.lists{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.list li{
+	width: 100%;
+	border-bottom: 12px solid #fff;
+	position: relative;
+}
+.list li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+}
+.iphonx h1{
+	line-height: 56px;
+	font-size: 48px;
+	margin-top: 20px;
+	text-align: center;
+	color: #444;
+}
+.iphonx h2{
+	text-align: center;
+	line-height: 62px;
+	font-size: 22px;
+	color: #444;
+}
+.iphonx div{
+	background: url('../img/iphone_x_large.jpg') no-repeat center;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+	bottom: 170px;
+}
+
+
+
+.lists ul li{
+	box-sizing: border-box;
+	float: left;
+	margin-bottom: 12px;
+}
+.lists ul li:nth-child(2n){
+	border-left: none;
+}
+.lists ul li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.text{
+	/* width: 976px; */
+	height: 270px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+.text ul{
+	width: 100%;
+	height: 100%;
+}
+.text ul li{
+	width: 20%;
+	height: auto;
+	border-left: 12px solid #fff;
+	box-sizing: border-box;
+	float: left;
+}
+.text li:last-child{
+	border-right: 12px solid #fff;
+}
+.text li span{
+	display: block;
+	font-size: 12px;
+	font-weight: 500;
+	margin-bottom: 10px; 
+}
+.text li a{
+	display: block;
+	font-size: 10px;
+	margin-bottom: 10px;
+	color: #000;
+}
+.marginTop{
+	margin-top: 30px;
+}
+.min1{
+	width: 100%;
+	height: 260px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+.text ul .tiao{
+	width: 100%;
+	height: 37px;
+	border-bottom: 1px solid #000;
+	
+}
+.text ul .tiao a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.tiao a span{
+	/* display: block; */
+	font-size: 18px;
+}
+.tiao a i{
+	/* display: block; */
+	font-size: 16px;
+}
+
+
+/* 阈值     >1024px   976px */
+@media screen and (min-width: 1024px){
+	header main{
+		width: 976px;
+	}
+	nav ul{
+		width: 976px;
+	}
+	.max{
+		display: block;
+	}
+	.min{
+		display: none;
+	}
+	.list li{
+		height: 580px;
+	}
+	.iphonx h1{
+		line-height: 62px;
+		font-size: 60px;
+		margin-top: 26px;
+	}
+	.iphonx h2{
+		line-height: 62px;
+		font-size: 22px;
+	}
+	.iphonx div{
+		width: 909px;
+		height: 194px;
+		background: url('../img/iphone_x_large.jpg') no-repeat center;
+		bottom: 170px;
+	}
+	.lists ul li{
+		width: 50%;
+		height: 580px;
+		border-left: 12px solid #fff;
+		border-right: 12px solid #fff;
+		box-sizing: border-box;
+	}
+	.lists ul li:nth-child(2n){
+		border-left: none;
+	}
+	.lists_img{
+		width: 100%;
+		height: 100%;
+		background: url('../img/wwdc_large.jpg') no-repeat center;
+	}
+	.text{
+		width: 976px;
+	}
+	.text li{
+		width: 20%;
+	}
+	.max1{
+		display: block;
+	}
+	.min1{
+		display: none;
+	}
+}
+/* <1024px */
+@media screen and (max-width:1024px){
+	header main{
+		padding-right: 22px;
+	}
+	nav ul{
+		padding-right: 22px;
+		padding-left: 22px;
+	}
+	.max{
+		display: block;
+	}
+	.min{
+		display: none;
+	}
+	.list li{
+		height: 569px;
+	}
+	.iphonx h1{
+		line-height: 56px;
+		font-size: 48px;
+		margin-top: 20px;
+	}
+	.iphonx h2{
+		line-height: 56px;
+		font-size: 20px;
+	}
+	.iphonx div{
+		width: 704px;
+		height: 148px;
+		background: url('../img/iphone_x_medium.jpg') no-repeat center;
+		bottom: 140px;
+	}
+	.lists ul li{
+		width: 50%;
+		height: 490px;
+		border-left: 6px solid #fff;
+		border-right: 6px solid #fff;
+		box-sizing: border-box;
+	}
+	.lists ul li:nth-child(2n){
+		border-left: none;
+	}
+	.lists_img{
+		width: 100%;
+		height: 100%;
+		background: url('../img/wwdc_medium.jpg') no-repeat center;
+	}
+	/* .text li{
+		width: 15%;
+	} */
+	.max1{
+		display: block;
+	}
+	.min1{
+		display: none;
+	}
+}
+@media screen and (max-width: 768px){
+	.max{
+		display: none;
+	}
+	.min{
+		display: block;
+	}
+	.list li{
+		height: 500px;
+	}
+	.iphonx h1{
+		line-height: 40px;
+		font-size: 36px;
+		margin-top: 20px;
+	}
+	.iphonx h2{
+		line-height: 40px;
+		font-size: 18px;
+	}
+	.iphonx div{
+		width: 167px;
+		height: 333px;
+		background: url('../img/iphone_x_small.jpg') no-repeat center;
+		bottom: 50px;
+	}
+	.lists ul li{
+		width: 100%;
+		height: 500px;
+		border: none;
+	}
+	.lists_img{
+		width: 100%;
+		height: 100%;
+		background: url('../img/wwdc_small.jpg') no-repeat center;
+	}
+	.max1{
+		display: none;
+	}
+	.min1{
+		display: block;
+	}
+}
